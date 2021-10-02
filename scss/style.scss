@@ -1,0 +1,50 @@
+@import '__variables.scss';
+@import "__part.scss";
+// start universal
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 50%;
+}
+// end universal
+// start nav 
+nav{
+    background: blue;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: green;
+        }
+    }
+}
+// end nav 
+// start showcase
+.showcase{
+    padding: 30px;
+    background: set-color(green);
+    &-content{
+        background: $yColor;
+    }
+}
+// end showcase
+// start part
+.part1{
+    @extend %ourPart;
+}
+.part2{
+    @extend %ourPart;
+    background: darken(orange, 20%);
+}
+// end part

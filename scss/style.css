@@ -1,0 +1,57 @@
+.part1, .part2 {
+  border: 1px solid black;
+  padding: 20px;
+  background: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 50%;
+}
+
+nav {
+  background: blue;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul a:hover {
+  color: green;
+}
+
+.showcase {
+  padding: 30px;
+  background: #fff;
+}
+
+.showcase-content {
+  background: #b1b133;
+}
+
+.part2 {
+  background: #996300;
+}
+/*# sourceMappingURL=style.css.map */
